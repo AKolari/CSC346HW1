@@ -6,11 +6,13 @@ const eventHandler =() =>{
     const number1= document.getElementById('number-1');
     const number2= document.getElementById('number-2');
     const result=document.getElementById('result');
+    const operation=document.getElementById('operation');
     const updateDomWithAddedNumbers=()=>{
        // result.innerHTML=parseInt(number1.value, 10)+parseInt(number2.value, 10);//parseInt(TheElementYouWantToGetValueFrom.value, 'The base of the value')
        if(number1.value.length!=0&&number2.value.length!=0){
-            
+        alert("Numbers Added!");
         result.innerHTML=add(number1.value, number2.value);
+        
         }
         else{
             alert("One of more fields not filled!");
@@ -19,8 +21,9 @@ const eventHandler =() =>{
     const updateDomWithMultipliedNumbers=()=>{
         // result.innerHTML=parseInt(number1.value, 10)+parseInt(number2.value, 10);//parseInt(TheElementYouWantToGetValueFrom.value, 'The base of the value')
         if(number1.value.length!=0&&number2.value.length!=0){
-            
+            alert("Numbers Multiplied!");
         result.innerHTML=mult(number1.value, number2.value);
+        
         }
         else{
             alert("One of more fields not filled!");
